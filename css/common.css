@@ -1,0 +1,179 @@
+*{margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+   font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+   font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+  
+}
+.banner{
+
+    background: #ff2f7c;
+}
+.banner img{
+    display: block;
+    margin: 0 auto;
+}
+#header{
+    background: #f2f2f2;
+    height: 40px;
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.30);
+}
+.wrapper{
+text-align: left;
+    width: 1230px; 
+    height: 20px;
+    margin: 0 auto;
+}
+.header_login{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    
+    float: left;
+}
+.header_login span,.header_login a{
+    color: #999;
+     
+}
+.header_login a:hover{
+    color:#FF0036;
+    
+}
+.header_login a{
+    padding-left: 20px;
+}
+.header_list{
+    float: right;
+    
+}
+.header_list li{
+    float: left;
+    line-height: 40px;
+    /* padding: 0 15px 0 20px; */
+}
+.header_list>li>a{
+    color:rgb(184, 178, 178);
+    display: block;
+    padding:0 15px 0 20px;
+   
+}
+.header_list li.list-menu:hover>a{
+    background: white;
+    text-decoration: underline;
+}
+.header_list li.list-menu{
+    position: relative;
+}
+.header_list li a:hover{
+    color:#FF0036;
+}
+.icon-gouwucheman{
+    
+    color:#FF0036;
+    font-size: 12px;
+}
+.icon-shouji{
+    font-size: 12px;
+    color:#FF0036;
+}
+.icon-wangzhandaohang{
+    font-size: 12px;
+    color:#FF0036;
+}
+.arrow{
+    width:0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top-color: #999;
+    position:absolute;
+    right:7px;
+    top: 20px;
+    transition: transform 0.2s ease;
+}
+.header_list li.list-menu:hover .arrow{
+    transform: rotate(180deg);
+    transform-origin: 50% 25%;
+}
+.header_list li.list-menu-no:hover>a{
+    color: #999;
+    text-decoration: none;
+}
+.sub-list{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 10px 8px;
+    width: 74px;
+    line-height: 30px;
+    display: none;
+
+
+}
+.sub-list a{
+    color: #999;
+}
+.sub-list a:hover {
+color: #FF0036;
+text-decoration: underline;
+}
+.header_list li.list-menu:hover .sub-list{
+    display: block;
+}
+.sub-shoucang{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 10px 8px;
+    width: 60px;
+    line-height: 30px;
+    display: none;
+}
+.sub-shoucang a{
+    color: #999;
+}
+.sub-shoucang a:hover {
+color: #FF0036;
+text-decoration: underline;
+}
+.header_list li.list-menu:hover .sub-shoucang{
+    display: block;
+}
+.sub-qr{
+    position: absolute;
+    left: -39px;
+    top: 29px;
+    box-shadow: 0 0  2px 2px rgba(0,0,0,0.3);
+    display: none;
+}
+.sub-qr::after{
+    content:'';
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    margin-left: -4px;
+
+}
+.list-tel:hover .sub-qr{
+    display: block;
+}
+.list-tel {
+    position: relative;
+}
